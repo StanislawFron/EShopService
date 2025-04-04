@@ -31,3 +31,8 @@
 /workspaces/EShopService/EShopService/obj/Debug/net9.0/EShopService.pdb
 /workspaces/EShopService/EShopService/obj/Debug/net9.0/EShopService.genruntimeconfig.cache
 /workspaces/EShopService/EShopService/obj/Debug/net9.0/ref/EShopService.dll
+/workspaces/EShopService/EShopService/obj/Debug/net9.0/EShopService.sourcelink.json
+/workspaces/EShopService/EShopService/bin/Debug/net9.0/EShop.Application.dll
+/workspaces/EShopService/EShopService/bin/Debug/net9.0/EShop.Domain.dll
+/workspaces/EShopService/EShopService/bin/Debug/net9.0/EShop.Application.pdb
+/workspaces/EShopService/EShopService/bin/Debug/net9.0/EShop.Domain.pdb

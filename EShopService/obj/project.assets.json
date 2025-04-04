@@ -33,6 +33,29 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "EShop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EShop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShop.Application.dll": {}
+        }
+      },
+      "EShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/EShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShop.Domain.dll": {}
+        }
       }
     }
   },
@@ -67,10 +90,22 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "EShop.Application/1.0.0": {
+      "type": "project",
+      "path": "../EShop.Application/EShop.Application.csproj",
+      "msbuildProject": "../EShop.Application/EShop.Application.csproj"
+    },
+    "EShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EShop.Domain/EShop.Domain.csproj",
+      "msbuildProject": "../EShop.Domain/EShop.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "EShop.Application >= 1.0.0",
+      "EShop.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3"
     ]
   },
@@ -98,7 +133,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/workspaces/EShopService/EShop.Application/EShop.Application.csproj": {
+              "projectPath": "/workspaces/EShopService/EShop.Application/EShop.Application.csproj"
+            },
+            "/workspaces/EShopService/EShop.Domain/EShop.Domain.csproj": {
+              "projectPath": "/workspaces/EShopService/EShop.Domain/EShop.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
